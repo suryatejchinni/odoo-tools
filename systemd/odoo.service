@@ -8,7 +8,6 @@ Group=odoo
 Type=simple
 WorkingDirectory=/opt/odoo
 ExecStart=/usr/bin/python /opt/odoo/ocb/odoo.py -c /opt/odoo/.openerp_serverrc 
-#ExecStart=/usr/bin/python /opt/odoo/ocb/odoo.py -c /opt/odoo/.openerp_serverrc -d "FENECON"
 Restart=always
 RestartSec=10
 
