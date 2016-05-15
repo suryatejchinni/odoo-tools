@@ -79,8 +79,5 @@ T="$(($(date +%s)-T))"
 
 echo "Finished after ${T} seconds"
 echo
-echo "List current databases"
-sudo -u odoo psql -l | cut -d" " -f 2 | grep "${db_src}_"
-echo
 echo "Change current user: su - odoo_$now"
 echo "Use with command:    ./ocb/odoo.py -d ${db_dst} --db-filter '^${db_dst}$' --xmlrpc-port=8070"
